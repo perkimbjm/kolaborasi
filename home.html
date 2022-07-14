@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dikayuh Baimbai</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+       <section>
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pt-lg-5">
+            <style scoped>
+                @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+                * {
+                    font-family: 'Inter', sans-serif !important;
+                }
+
+                body {
+                    background-color: #FFFFFF;
+                }
+
+                body nav .navbar-brand h5 {
+                    font-weight: 700 !important;
+                    size: 28px;
+                    line-height: 150%;
+                }
+
+                body nav .navbar-nav .nav-link {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #739AD4 !important;
+                    margin: 0 30px;
+                }
+
+                body nav .navbar-nav .active {
+                    color: #080E09 !important;
+                    width: 100%;
+                    display: -webkit-box !important;
+                    display: -ms-flexbox !important;
+                    display: flex !important;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                }
+
+                body nav .navbar-nav .active a {
+                    width: 12px;
+                }
+
+                body nav .navbar-nav .border-bottom {
+                    border-bottom: 2px solid #0F52BA !important;
+                }
+
+                @media screen and (min-width: 993px) {
+                    body nav .navbar-nav {
+                        margin-left: 560px;
+                    }
+                }
+            </style>
+
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h5 class="mb-0">Dikayuh Baimbai</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active border-bottom" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="#">Form DED</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="#">Form Usulan</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link" href="https://bakawan.banjarmasinkota.go.id/">Bakawan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="container">
+            <style scoped>
+                /* @media screen and (min-width: 768px) {
+                    body .pl-house {
+                        margin: 0 !important;
+                        padding-left: 100px;
+                    }
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .pl-house {
+                        margin: 0 10px 0 5px !important;
+                    }
+                } */
+
+                body #header {
+                    margin-top: 138px;
+                    margin-bottom: 100px;
+                    width: 100% !important;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body #header {
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+                    }
+                }
+
+                body .img-header {
+                    z-index: -1;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                body .explore {
+                    background-color: #080E09;
+                    padding-top: 100px;
+                    padding-bottom: 50px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .explore {
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+                }
+
+                body .explore .descript-explore {
+                    max-width: 75%;
+                }
+
+                body .pt-35 {
+                    padding-top: 35px;
+                }
+
+                body .title h1 {
+                    font-size: 72px;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .title h1 {
+                        font-size: 48px;
+                    }
+                }
+
+                body .stat {
+                    margin-top: 48px;
+                }
+
+                body .stat h2 {
+                    font-size: 48px;
+                    font-weight: 800;
+                }
+
+                body .stat .descript-head {
+                    color: #000909;
+                }
+
+                @media screen and (max-width: 768px) {
+                    body .stat h2 {
+                        font-size: 28px;
+                    }
+                }
+
+                body .stat p {
+                    font-size: 16px;
+                    color: #ADB2B8;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                body .stat .descript-head {
+                    max-width: 90%;
+                }
+
+                body .btn-blue {
+                    background-color: #0F52BA;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 16px;
+                    border-radius: 12px;
+                    margin-top: 48px;
+                }
+
+                body .gallery {
+                    padding: 10px 0;
+                }
+
+                @media only screen and (max-width: 768px) {
+                    body .gallery {
+                        margin: 50px 0;
+                    }
+                }
+
+                body .gallery .card-hotel-carousel {
+                    width: 325px;
+                    margin-right: 64px;
+                    padding: 28px 28px 40px;
+                    border-radius: 28px;
+                    background: white;
+                    -webkit-box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+                    box-shadow: 20px 8px 18px rgba(178, 177, 255, 0.05);
+                }
+
+                @media only screen and (max-width: 768px) {
+                    body .gallery .card-hotel-carousel {
+                        margin-right: 20px;
+                    }
+                }
+
+                body .gallery .card-hotel-carousel .image-placeholder {
+                    width: 268px;
+                    height: 190px;
+                }
+
+                body .gallery .card-hotel-carousel .image-placeholder img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    border-radius: 16px;
+                }
+
+                body .gallery .card-hotel-carousel .card-details {
+                    padding-bottom: 53px;
+                    height: 150px;
+                }
+
+                body .gallery .card-hotel-carousel .card-details .caption {
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: #080E09;
+                    margin-top: 24px;
+                }
+
+                body .gallery .card-hotel-carousel .card-details .sub-caption {
+                    font-weight: 400;
+                    color: #ADB2B8;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .price-content {
+                    color: #080E09;
+                    font-size: 16px;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .price-content span {
+                    font-weight: 400;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .price-content span.price {
+                    font-weight: 700;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .rating {
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #FF9900;
+                }
+
+                body .gallery .card-hotel-carousel .bottom-text .rating img {
+                    margin-top: -1px;
+                    margin-right: 5px;
+                }
+
+                @media screen and (min-width: 600px) {
+                    body .image-content .img-fluid {
+                        height: 144.953px;
+                    }
+                }
+
+                body .text-content h1 {
+                    font-size: 60px !important;
+                    line-height: 150%;
+                    color: white;
+                }
+
+                body .text-content p {
+                    font-size: 16px;
+                    color: #ADB2B8;
+                    font-weight: 400;
+                    line-height: 28px;
+                    padding-bottom: 108px;
+                }
+
+                body .place .img-place-header {
+                    width: 100% !important;
+                }
+
+                body .scrolling-wrapper {
+                    overflow-x: auto;
+                }
+
+                body .section::-webkit-scrollbar {
+                    height: 0 !important;
+                }
+
+                body .section::-webkit-scrollbar-track {
+                    background-color: #e4e4e4;
+                    border-radius: 100px;
+                }
+
+                body .section::-webkit-scrollbar-thumb {
+                    background-color: #05BB2D;
+                    border-radius: 100px;
+                }
+            </style>
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/bg-header.svg"
+                alt="bg-header" class="img-header d-none d-md-block">
+            <div class="row mx-0" id="header">
+                <div class="col-xl-6">
+                    <div class="title">
+                        <h1>
+                            DIKAYUH
+                        </h1>
+                    </div>
+                    <div class="title">
+                        <h1>
+                            BAIMBAI
+                        </h1>
+                    </div>
+                    <div class="d-flex stat">
+                        <div class="text-left me-4 me-md-5">
+                            <h2>
+                                7
+                            </h2>
+                            <p>
+                                RK
+                            </p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="px-md-5 px-4">
+                            <h2>
+                                52
+                            </h2>
+                            <p>
+                                Kelurahan
+                            </p>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="ms-4 ms-md-5">
+                            <h2>
+                                5
+                            </h2>
+                            <p>
+                                Kecamatan
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <p class="descript-head">
+                            Aplikasi Manajemen Data dan Informasi Penanganan Kawasan Yang Kumuh di Kota Banjarmasin secara Baimbai (Kolaboratif)
+                        </p>
+                    </div>
+                    <div>
+                        <button class="btn btn-blue px-5 py-3 shadow">
+                            Jelajahi Peta
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-6 my-auto">
+                    <div class="gallery row p-md-4 section scrolling-wrapper flex-row flex-nowrap">
+                        <!-- CARD 1 -->
+                        <div class="card-hotel-carousel">
+                            <div class="image-placeholder">
+                                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/place.png"
+                                    alt="images" />
+                            </div>
+                            <div class="card-details">
+                                <div class="caption">Tretes Hotel INA</div>
+                                <span class="sub-caption">150m</span>
+                            </div>
+                            <div class="bottom-text d-flex flex-row justify-content-between">
+                                <div class="price-content flex-grow-1">
+                                    <span>Start from</span> <span class="price">40 USD</span>
+                                </div>
+                                <div class="rating d-flex align-items-center">
+                                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                                        alt="star" />
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD 1 -->
+                        <!-- CARD 2 -->
+                        <div class="card-hotel-carousel">
+                            <div class="image-placeholder">
+                                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/place-2.png"
+                                    alt="images" />
+                            </div>
+                            <div class="card-details">
+                                <div class="caption">Hotel Mawar & Melati Putih</div>
+                                <span class="sub-caption">120m</span>
+                            </div>
+                            <div class="bottom-text d-flex flex-row justify-content-between">
+                                <div class="price-content flex-grow-1">
+                                    <span>Start from</span> <span class="price">40 USD</span>
+                                </div>
+                                <div class="rating d-flex align-items-center">
+                                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                                        alt="star" />
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD 2 -->
+                        <!-- CARD 3 -->
+                        <div class="card-hotel-carousel">
+                            <div class="image-placeholder">
+                                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/place.png"
+                                    alt="images" />
+                            </div>
+                            <div class="card-details">
+                                <div class="caption">Tretes Hotel INA</div>
+                                <span class="sub-caption">150m</span>
+                            </div>
+                            <div class="bottom-text d-flex flex-row justify-content-between">
+                                <div class="price-content flex-grow-1">
+                                    <span>Start from</span> <span class="price">40 USD</span>
+                                </div>
+                                <div class="rating d-flex align-items-center">
+                                    <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-House/star-yellow.svg"
+                                        alt="star" />
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END CARD 3 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section><section class="explore">
+    <style scoped>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+        * {
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        @media screen and (min-width: 768px) {
+            body .pl-house {
+                margin: 0 !important;
+                padding-left: 100px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body .pl-house {
+                margin: 0 10px 0 5px !important;
+            }
+        }
+
+        body .explore {
+            background-color: #080E09;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        @media screen and (max-width: 768px) {
+            body .explore {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+
+        body .explore .descript-explore {
+            max-width: 75%;
+        }
+
+        body .scrolling-wrapper {
+            overflow-x: auto;
+        }
+
+        body .section::-webkit-scrollbar {
+            height: 0 !important;
+        }
+
+        body .section::-webkit-scrollbar-track {
+            background-color: #e4e4e4;
+            border-radius: 100px;
+        }
+
+        body .section::-webkit-scrollbar-thumb {
+            background-color: #05BB2D;
+            border-radius: 100px;
+        }
+
+        body .cl-blue {
+            color: #0F52BA !important;
+        }
+
+        body .btn-blue {
+            background-color: #0F52BA;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            border-radius: 12px;
+            margin-top: 48px;
+        }
+
+        body .text-content h1 {
+            font-size: 60px !important;
+            line-height: 150%;
+            color: white;
+        }
+
+        body .text-content p {
+            font-size: 16px;
+            color: #ADB2B8;
+            font-weight: 400;
+            line-height: 28px;
+            padding-bottom: 108px;
+        }
+
+        body .title h1 {
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 150%;
+        }
+
+        @media screen and (max-width: 768px) {
+            body .title h1 {
+                font-size: 48px;
+            }
+        }
+
+        body .section::-webkit-scrollbar {
+            height: 0 !important;
+        }
+
+        body .section::-webkit-scrollbar-track {
+            background-color: #e4e4e4;
+            border-radius: 100px;
+        }
+
+        body .section::-webkit-scrollbar-thumb {
+            background-color: #05BB2D;
+            border-radius: 100px;
+        }
+
+        body .img-explore {
+            height: 600px;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body .img-explore {
+                height: 300px;
+            }
+        }
+
+        body .img-explore img {
+            width: 452px !important;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            border-radius: 24px;
+            margin-right: 72px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body .img-explore img {
+                width: 226px !important;
+            }
+        }
+    </style>
+    <div class="pl-house">
+        <div class="row text-content title pt-35 my-0 mx-0" id="header">
+            <div class="col-md-9 px-md-0">
+                <h2 class="pb-3">
+                    Galeri Penanganan Kumuh
+                </h2>
+                <p class="pb-0 descript-explore">
+                    Blandit <span class="cl-blue">1,900</span> natoque dui justo, dictum turpis amet, viverra vel
+                    ornare quis mattis mi ac eget id integer dolor dui aliquam volutpat varius pulvinar massa
+                </p>
+            </div>
+            <div class="col-md-3 mt-md-3">
+                <button class="btn btn-blue px-5 py-3 mt-0">Learn More</button>
+            </div>
+        </div>
+        <div class="row section scrolling-wrapper flex-row flex-nowrap mt-3 img-explore mx-2">
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/image-1.jpeg"
+                alt="image-1" class="img-fluid">
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/image-2.jpeg"
+                alt="image-2" class="img-fluid">
+            <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/image-3.jpeg"
+                alt="image-3" class="img-fluid">
+        </div>
+    </div>
+</section><footer class="page-footer font-small blue">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Merriweather:wght@900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+        * {
+            font-family: 'Poppins', 'Inter', sans-serif !important;
+        }
+
+        body footer {
+            background: linear-gradient(293.57deg, #114E4E 0%, #052D2D 23.8%, #041111 42.57%, #000909 63.76%, #000909 69.62%);
+            color: #EEEEEE;
+            padding-top: 72px !important;
+            padding-bottom: 36px !important;
+        }
+
+        body footer h5 {
+            font-weight: 600 !important;
+            size: 16px !important;
+            line-height: 150%;
+            color: #ECF1F4;
+        }
+
+        body footer .address p {
+            font-weight: 400 !important;
+            size: 16px !important;
+            line-height: 150%;
+            color: #ECF1F4;
+        }
+
+        body footer .nav-footer p {
+            font-weight: 700 !important;
+            size: 16px !important;
+            line-height: 150%;
+            color: #ECF1F4;
+        }
+
+        body footer .nav-footer a {
+            font-weight: 400 !important;
+            size: 16px !important;
+            color: #ECF1F4;
+        }
+
+        body footer li {
+            margin-bottom: 12px;
+        }
+
+        body footer .social-media a {
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        body footer .copyright {
+            margin-top: 76px;
+            padding-top: 36px;
+        }
+
+        body footer .copyright p {
+            font-weight: 400 !important;
+            size: 16px !important;
+            color: #ECF1F4;
+        }
+
+        body .cl-light {
+            color: #EEEEEE;
+        }
+
+        body .cl-light-grey-2 {
+            color: #90BCB7;
+        }
+
+        body .font-lora {
+            font-family: 'Lora', sans-serif !important;
+        }
+    </style>
+    <div class="container text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3 address">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header-workly/Logo.svg"
+                    alt="logo" class="img-fluid mb-2">
+                <h5 class="">DPRKP Kota Banjarmasin</h5>
+                <p>Jl. RE Martadinata no. 1 Blok B Lt.2 <br> Banjarmasin</p>
+                <div class="mt-md-5 social-media">
+                    <a href="#">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_linkedin.svg"
+                            alt="linkedin" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_facebook.svg"
+                            alt="facebook" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_twitter.svg"
+                            alt="twitter" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_twitch.svg"
+                            alt="twitch" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="row col-md-6 nav-footer">
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <p>
+                        Our Features
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Adaptive</a>
+                        </li>
+                        <li>
+                            <a href="#!">Faster</a>
+                        </li>
+                        <li>
+                            <a href="#!">Integrated</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <p>
+                        Company
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <p>
+                        Help
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">API Documentation</a>
+                        </li>
+                        <li>
+                            <a href="#!">System Status</a>
+                        </li>
+                        <li>
+                            <a href="#!">Talk to Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright row d-flex justify-content-center border-top mx-0">
+        <p class="my-0">
+            2022 DPRKP Kota Banjarmasin | All rights reserved.
+        </p>
+    </div>
+</footer> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+  </html>

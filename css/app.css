@@ -1,0 +1,10 @@
+.leaflet-control-layers {
+    overflow: auto;
+  }
+.leaflet-control-layers label {
+    font-weight: normal;
+    margin-bottom: 0px;
+  }
+.leaflet-control-layers-list input[type="radio"], input[type="checkbox"] {
+    margin: 2px;
+  }
