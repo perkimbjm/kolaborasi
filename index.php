@@ -295,6 +295,12 @@
     <script src="js/L.Control.Fullscreen.min.js"></script>    
     
     <script src="app.js"></script>
+
+    <script type="text/javascript">        
+        if (window.location.protocol != "https:") {
+           window.location.protocol = "https";
+        }
+    </script>
   </body>
 </html>
 
