@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Coordinates Search">
     <meta name="author" content="DPRKP Kota Banjarmasin">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="img/logo.png" rel="shortcut icon" type="image/png">
     <title>Form Survei DED</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
