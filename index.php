@@ -34,7 +34,7 @@
       <section class="content">
         <div class="row">
           <div class="col-12">
-            <form name="survei" data-netlify="true">
+            <form name="survei">
               <div class="card shadow" id="datalokasiobjek">
                 <div class="card-header">
                   <div class="alert alert-primary text-center">
