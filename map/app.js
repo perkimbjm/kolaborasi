@@ -122,10 +122,15 @@ let Kelurahan = L.geoJson(null, {
       fillOpacity: 0,
       opacity: 0.6,
       width: 0.01,
-      clickable: false,
+      clickable: true,
     };
   },
-
+  onEachFeature: function (feature, layer) {
+    layer.bindTooltip(feature.properties.KELURAHAN), layer.bindPopup(feature.properties.KELURAHAN,
+    {permanent: true, direction:"center"}
+   ).openTooltip()
+    
+  }
 });
 $.getJSON("data/kelurahan.geojson", function (data) {
   Kelurahan.addData(data);
