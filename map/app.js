@@ -126,9 +126,9 @@ let Kelurahan = L.geoJson(null, {
     };
   },
   onEachFeature: function (feature, layer) {
-    layer.bindTooltip(feature.properties.KELURAHAN), layer.bindPopup(feature.properties.KELURAHAN,
-    {permanent: true, direction:"center"}
-   ).openTooltip()
+    layer.bindPopup(feature.properties.KELURAHAN + "<a target='_blank' href='http://103.12.84.58/slum/profil16p/umum/info?kd_prop=63&kd_kota=6371&kd_kel=" + feature.properties.KODE_KOTAKU + "'>" + "<br>Lihat Profil</a>", layer.bindTooltip(feature.properties.KELURAHAN, 
+    {permanent: true, direction:"center", className:"no-background"}
+   )).openTooltip()
     
   }
 });
