@@ -136,22 +136,43 @@ $.getJSON("data/kelurahan.geojson", function (data) {
   Kelurahan.addData(data);
 });
 
-/*load wms form geoserver*/
-const sungai = L.tileLayer.wms("https://www.sialdobjm.com/geoserver/banjarmasin/wms?", {
-  layers: 'banjarmasin:sungai',
-  format: 'image/png',
-  transparent: true,
-  version: '1.1.0'
-
+let batas_RT = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "grey",
+      fill: true,
+      fillOpacity: 0.2,
+      opacity: 0.6,
+      width: 0.01,
+    };
+  },
+  onEachFeature: function (feature, layer) {
+     layer.bindTooltip(feature.properties.Nama_RT, 
+    {permanent: true, direction:"center", className:"no-background"}
+   ).openTooltip()
+    
+  }
+});
+$.getJSON("data/BATAS_RT_AR.geojson", function (data) {
+  batas_RT.addData(data);
 });
 
-const jalan = L.tileLayer.wms("https://www.sialdobjm.com/geoserver/sialdo/wms?", {
-  layers: 'sialdo:jalan_LN',
-  format: 'image/png',
-  transparent: true,
-  version: '1.1.0'
+// /*load wms form geoserver*/
+// const sungai = L.tileLayer.wms("https://www.sialdobjm.com/geoserver/banjarmasin/wms?", {
+//   layers: 'banjarmasin:sungai',
+//   format: 'image/png',
+//   transparent: true,
+//   version: '1.1.0'
 
-});
+// });
+
+// const jalan = L.tileLayer.wms("https://www.sialdobjm.com/geoserver/sialdo/wms?", {
+//   layers: 'sialdo:jalan_LN',
+//   format: 'image/png',
+//   transparent: true,
+//   version: '1.1.0'
+
+// });
 
 /* GeoJSON Point */
 var pointsample = L.geoJson(null, {
@@ -266,8 +287,9 @@ let groupedOverlays = {
   "UTILITAS KOTA & BATAS ADMINISTRASI": {
     // "Kecamatan": Kecamatan,
     "Kelurahan": Kelurahan,
-    "Sungai": sungai,
-    "Jalan": jalan,
+    "Batas RT": batas_RT,
+    // "Sungai": sungai,
+    // "Jalan": jalan,
   },
 
   "DATA SURVEI DAN USULAN": {
