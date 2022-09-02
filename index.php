@@ -147,13 +147,13 @@
                     <div class="col-sm">
                       <div class="form-group">
                         <label for="panjang"><strong>Panjang (m)</strong></label>
-                        <input type="number" class="form-control text-primary" id="panjang" name="panjang" placeholder="Panjang Ruas" value="">
+                        <input type="text" class="form-control text-primary" id="panjang" name="panjang" placeholder="Panjang Ruas" value="">
                       </div>
                     </div>
                     <div class="col-sm">
                       <div class="form-group">
                         <label for="lebar"><strong>Lebar rata-rata (m)</strong></label>
-                        <input type="number" class="form-control text-primary" id="lebar" name="lebar" placeholder="Lebar Ruas" value="">
+                        <input type="text" class="form-control text-primary" id="lebar" name="lebar" placeholder="Lebar Ruas" value="">
                       </div>
                     </div>
                   </div>
