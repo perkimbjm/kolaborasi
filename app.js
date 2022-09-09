@@ -132,6 +132,12 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { mode: 'no-cors', method: 'POST', body: new FormData(form)})
     .then(response => {
       console.log('Success!', response);
+      swal({
+        title: "Good job!",
+        text: "Data Berhasil Disimpan !",
+        icon: "success",
+        button: "Mantap",
+      });
       btnSimpan.classList.toggle('d-none');
       btnLoading.classList.toggle('d-none');
       myAlert.classList.toggle('d-none');
