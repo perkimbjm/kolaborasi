@@ -138,6 +138,7 @@ form.addEventListener('submit', e => {
         icon: "success",
         button: "Mantap",
       });
+      window.scrollTo(0, 0);
       btnSimpan.classList.toggle('d-none');
       btnLoading.classList.toggle('d-none');
       myAlert.classList.toggle('d-none');
