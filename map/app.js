@@ -254,6 +254,45 @@ $.getJSON("musrenbang.php", function (data) {
   map.fitBounds(musrenbang.getBounds());
 });
 
+/* Pokir Point */
+var pokir = L.geoJson(null, {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.icon({
+        iconUrl: ( feature.properties.titik === "pangkal" ? "../img/pangkal3.svg" : "../img/ujung3.svg"), 
+        iconSize: [20, 41],
+        iconAnchor: [13, 41],
+        shadowAnchor: [13, 41],
+        popupAnchor: [0, -41],
+      })
+    });
+  },
+  /* Popup & Tooltip */
+  onEachFeature: function (feature, layer) {
+    var content = "<table class='tg'>" + 
+      "<tr><th class='tg-zjf3'>Ruas / Segmen</th><td>" + feature.properties.nama + "</td></tr>" +
+      "<tr><th class='tg-zjf3'>Alamat</th><td>" + feature.properties.alamat + " RT. " + feature.properties.rt + " Kel. " + feature.properties.kelurahan + "</td></tr>" +
+      "<tr><th class='tg-zjf3'>Jenis Kerusakan</th><td>" + feature.properties.kerusakan + "</td></tr>" +
+       "<tr><th class='tg-zjf3'>Catatan Khusus</th><td>" + feature.properties.catatan + "</td></tr>" +
+       "<tr><th class='tg-zjf3'>Pengusul</th><td>" + feature.properties.pengusul + "</td></tr>" +
+       "<tr><th class='tg-zjf3'>Status</th><td>" + feature.properties.status + "</td></tr>" +
+      "<tr><th class='tg-zjf3'>Surveyor</th><td>" + feature.properties.surveyor + "</td></tr>" +
+      "</table>";
+    layer.on({
+      click: function (e) {
+        pokir.bindPopup(content);
+      },
+      mouseover: function (e) {
+        pokir.bindTooltip(feature.properties.alamat);
+      }
+    });
+  }
+});
+/* get JSON data */
+$.getJSON("pokir.php", function (data) {
+  pokir.addData(data);
+  map.fitBounds(pokir.getBounds());
+});
 
 
 
@@ -295,6 +334,7 @@ let groupedOverlays = {
   "DATA SURVEI DAN USULAN": {
     "DED": pointsample,
     "Musrenbang" : musrenbang,
+    "Pokir" : pokir,
   }
 };
 
