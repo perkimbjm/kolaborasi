@@ -16,6 +16,7 @@ function zoomToFeature(e) {
   map.fitBounds(e.target.getBounds());
 }
 
+
 /*DELINIASI KUMUH*/
 let kumuh = L.geoJson(null, {
   style: function (feature) {
@@ -197,7 +198,7 @@ var pointsample = L.geoJson(null, {
       "<tr><th class='tg-zjf3'>Dimensi</th><td>P = " + feature.properties.panjang + " m  L = " + feature.properties.lebar + "m</td></tr>" +
       "<tr><th class='tg-zjf3'>Catatan Khusus</th><td>" + feature.properties.catatan + "</td></tr>" +
       "<tr><th class='tg-zjf3'>Surveyor</th><td>" + feature.properties.surveyor + "</td></tr>" +
-      "</table>";
+      "</table><br><button class='btn btn-sm btn-outline-success btn-block'><a target='_blank' href='https://maps.google.com/maps?q=" + feature.properties.lat + "," + feature.properties.lng + "&z=20&ll=" + feature.properties.lat + "," + feature.properties.lng + "'>Tunjukkan Peta</a></button><button class='btn btn-sm btn-outline-warning btn-block'>Google Streetview</button>";
     layer.on({
       click: function (e) {
         pointsample.bindPopup(content);
